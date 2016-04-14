@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Article</title>
+    <title>Contact</title>
 
     <!-- Bootstrap -->
     <link href="vendor/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/contact.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,10 +37,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Posts <span class="sr-only">(current)</span></a></li>
+                <li><a href="article.html">Posts <span class="sr-only">(current)</span></a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="archive.html">Archive</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="login.html">Log in</a></li>
@@ -68,51 +68,38 @@
             </aside>
         </div>
         <div class="col-md-8">
-            <article>
-                <h1>Trust doesn’t essentially need any ego.</h1>
-                <div class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Deserunt facere ipsam, nostrum officia quo unde velit voluptatem?
-                    Atque cupiditate, doloribus, eligendi iure minus odio optio porro
-                    rerum sit voluptates voluptatibus.
-                </div>
-            </article>
+            <h1>Contact Us</h1>
 
-            <div id="comments">
-                <h2>Comments</h2>
-                <div class="row">
-                    <div class="col-md-11">
+            <div class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Amet dicta excepturi fugiat fugit in inventore molestiae nostrum
+            </div>
+
+            <hr>
+
+            <p>facebook: <a href="http://facebook/abideinhope" target="_blank">@abideinhope</a></p>
+            <p>linkedin: <a href="https://www.linkedin.com/pub/abideinhope" target="_blank">follow us in linkedin</a></p>
+            <p>googleplus: <a href="https://github.come/abideinhope">follow us on googleplus</a></p>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <form>
+                        <h3>Send me a message</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Deserunt facere ipsam, nostrum officia quo unde velit voluptatem?
+                            <label class="sr-only">Your Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name" required autofocus>
                         </p>
-                        <footer>
-                            <small><b>Daniel</b> Commented on: 8 Mar 2016</small>
-                        </footer>
-                        <hr>
-                    </div>
-                    <div class="col-md-1 comment-num">01</div>
+                        <p>
+                            <label class="sr-only">Your Message</label>
+                            <textarea class="form-control" placeholder="Your Message" id="textarea" required></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                        </p>
+                    </form>
                 </div>
-
-                <form>
-                    <h3>Have your say</h3>
-                    <p>
-                        <label class="sr-only">Message</label>
-                        <textarea class="form-control" id="message" placeholder="Message" required aria-autocomplete="none"></textarea>
-                    </p>
-
-                    <p>
-                        <label class="sr-only">Full Name</label>
-                        <input type="text" class="form-control" placeholder="Full Name" required>
-                    </p>
-                    <p>
-                        <label class="sr-only">Email Address</label>
-                        <input type="email" class="form-control" placeholder="Email Address" required>
-                    </p>
-                    <p>
-                        <input type="submit" class="btn btn-primary" value="Send Message">
-                    </p>
-                </form>
             </div>
         </div>
     </div>
