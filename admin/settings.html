@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Un-approved</title>
+    <title>Settings</title>
 
     <!-- Bootstrap -->
     <link href="../vendor/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@
                     </ul>
                 </li>
 
-                <li class="link active">
+                <li class="link">
                     <a href="#collapse-comments" data-toggle="collapse" aria-controls="collapse-comments">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                         <span class="hidden-sm hidden-xs">Comments</span>
@@ -80,7 +80,7 @@
                     </a>
                 </li>
 
-                <li class="link settings-btn">
+                <li class="link active settings-btn">
                     <a href="settings.html">
                         <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                         <span class="hidden-sm hidden-xs">Settings</span>
@@ -135,104 +135,60 @@
 
             <div id="content">
                 <header class="clearfix">
-                    <h2 class="page-title pull-left">All un-approved</h2>
-                    <button type="button" class="btn btn-xs btn-primary pull-right">Create new article</button>
+                    <h2 class="page-title pull-left">General blog settings</h2>
                 </header>
 
 
                 <div class="content-inner">
-                    <div class="row search-row">
-                        <div class="col-md-12">
-                            <div class="input-group">
-                                <input type="text" class="form-control search-field" id="search" placeholder="Search">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-primary go">Go!</button>
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row comments-row">
-                        <div class="col-sm-2 col-md-1">
-                            <img class="img-circle hidden-xs" src="https://api.fnkr.net/testimg/70x70/00CED1/FFF/?text=70x70">
-                        </div>
-
-
-                        <div class="col-sm-10 col-md-11">
-                            <div class="row">
-                                <div class="col-xs-9 col-sm-10 col-md-9">
-                                    <b>daniel park</b> posted message on <b>How all things are made...</b><br>
-                                    <small>Today 8:45 pm - 01/16/2016</small>
-                                </div>
-
-                                <div class="col-xs-3 col-sm-2 col-md-3">
-                                    <div class="clearfix">
-                                        <div class="pull-right comment-age">2 days ago</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="settings-row">
+                                    <h3>Site name</h3>
+                                    <p>This is permanently shown on the top left corner of navigation</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="well well-sm comments-well">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Aliquid dolores ducimus harum maiores nam necessitatibus
-                                numquam rem repellat sunt tenetur. Alias commodi iste,
-                                labore magni nisi nulla quaerat quas veniam?
-                            </div>
-
-                            <div class="clearfix">
-                                <div class="pull-right">
-                                    <a href="#" class="btn btn-xs btn-default" role="button">
-                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-                                        Approve
-                                    </a>
-                                    <a href="#" class="btn btn-xs btn-default" role="button">
-                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                                        Delete
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row comments-row">
-                        <div class="col-sm-2 col-md-1">
-                            <img class="img-circle hidden-xs" src="https://api.fnkr.net/testimg/70x70/00CED1/FFF/?text=70x70">
-                        </div>
-
-
-                        <div class="col-sm-10 col-md-11">
-                            <div class="row">
-                                <div class="col-xs-9 col-sm-10 col-md-9">
-                                    <b>daniel park</b> posted message on <b>How all things are made...</b><br>
-                                    <small>Today 8:45 pm - 01/16/2016</small>
-                                </div>
-
-                                <div class="col-xs-3 col-sm-2 col-md-3">
-                                    <div class="clearfix">
-                                        <div class="pull-right comment-age">2 days ago</div>
+                                <div class="settings-row">
+                                    <h3>Posts per page</h3>
+                                    <p>Control total number of blogs shown on the blog index page.</p>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" required>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="well well-sm comments-well">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Aliquid dolores ducimus harum maiores nam necessitatibus
-                                numquam rem repellat sunt tenetur. Alias commodi iste,
-                                labore magni nisi nulla quaerat quas veniam?
-                            </div>
-
-                            <div class="clearfix">
-                                <div class="pull-right">
-                                    <a href="#" class="btn btn-xs btn-default" role="button">
-                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-                                        Approve
-                                    </a>
-                                    <a href="#" class="btn btn-xs btn-default" role="button">
-                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                                        Delete
-                                    </a>
+                                <div class="settings-row">
+                                    <h3>Under maintenance</h3>
+                                    <p>Redirect all requests to the holding page.</p>
+                                    <div class="checkbox">
+                                    	<label>
+                                    		<input type="checkbox" value="">
+                                    		blog is under maintenance
+                                    	</label>
+                                    </div>
                                 </div>
-                            </div>
+
+                                <div class="settings-row">
+                                    <h3>Prevent commenting</h3>
+                                    <p>Prevent or Enable visitors from leaving comments.</p>
+                                    <select id="enable-comment" class="form-control">
+                                    	<option value="">active</option>
+                                    	<option value="">disable</option>
+                                    </select>
+                                </div>
+
+                                <div class="settings-row">
+                                    <h3>Tags visibility</h3>
+                                    <p>Enable or disable tag visibility on all blog posts.</p>
+                                    <select id="enable-tags" class="form-control">
+                                    	<option value="">active</option>
+                                    	<option value="">disable</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Save settings</button>
+                            </form>
                         </div>
                     </div>
 
