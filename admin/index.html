@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="../vendor/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -94,14 +95,16 @@
                 <header id="nav-header" class="clearfix">
                     <div class="col-md-5">
                         <nav class="navbar-default pull-left">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas"
+                                    data-target="#side-menu" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
                         </nav>
-                        <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="Search for something...">
+                        <input type="text" class="hidden-sm hidden-xs" id="header-search-field"
+                               placeholder="Search for something...">
                     </div>
 
                     <div class="col-md-7">
@@ -130,28 +133,29 @@
                 </header>
             </div>
 
-            <div class="dashboard-container">
+            <div id="dashboard-container">
                 <div class="row">
                     <div class="col-md-6 dashboard-left-cell">
                         <div class="admin-content-container">
                             <header class="clearfix">
                                 <h5 class="pull-left">Articles</h5>
-                                <button class="btn btn-xs btn-primary" href="#" role="button">Create new article</button>
+                                <button class="btn btn-xs btn-primary pull-right" href="#" role="button">Create new article
+                                </button>
                             </header>
                             <table class="table table-striped">
                                 <thead>
                                 <tr>
                                     <th>title</th>
-                                    <th>replies</th>
-                                    <th>date</th>
+                                    <th class="hidden-xs">replies</th>
+                                    <th class="hidden-xs">date</th>
                                     <th>actions</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>This is the first post of many to come...</td>
-                                    <td>20</td>
-                                    <td>2 days ago</td>
+                                    <td class="hidden-xs">20</td>
+                                    <td class="hidden-xs">2 days ago</td>
                                     <td>
                                         <a href="#" role="button" class="btn btn-xs btn-warning">edit</a>
                                         <a href="#" role="button" class="btn btn-xs btn-primary">view</a>
@@ -160,8 +164,8 @@
                                 </tr>
                                 <tr>
                                     <td>This is the first post of many to come...</td>
-                                    <td>20</td>
-                                    <td>2 days ago</td>
+                                    <td class="hidden-xs">20</td>
+                                    <td class="hidden-xs">2 days ago</td>
                                     <td>
                                         <a href="#" role="button" class="btn btn-xs btn-warning">edit</a>
                                         <a href="#" role="button" class="btn btn-xs btn-primary">view</a>
@@ -170,8 +174,8 @@
                                 </tr>
                                 <tr>
                                     <td>This is the first post of many to come...</td>
-                                    <td>20</td>
-                                    <td>2 days ago</td>
+                                    <td class="hidden-xs">20</td>
+                                    <td class="hidden-xs">2 days ago</td>
                                     <td>
                                         <a href="#" role="button" class="btn btn-xs btn-warning">edit</a>
                                         <a href="#" role="button" class="btn btn-xs btn-primary">view</a>
@@ -180,8 +184,18 @@
                                 </tr>
                                 <tr>
                                     <td>This is the first post of many to come...</td>
-                                    <td>20</td>
-                                    <td>2 days ago</td>
+                                    <td class="hidden-xs">20</td>
+                                    <td class="hidden-xs">2 days ago</td>
+                                    <td>
+                                        <a href="#" role="button" class="btn btn-xs btn-warning">edit</a>
+                                        <a href="#" role="button" class="btn btn-xs btn-primary">view</a>
+                                        <a href="#" role="button" class="btn btn-xs btn-danger">del</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>This is the first post of many to come...</td>
+                                    <td class="hidden-xs">20</td>
+                                    <td class="hidden-xs">2 days ago</td>
                                     <td>
                                         <a href="#" role="button" class="btn btn-xs btn-warning">edit</a>
                                         <a href="#" role="button" class="btn btn-xs btn-primary">view</a>
@@ -190,7 +204,9 @@
                                 </tr>
                                 </tbody>
                             </table>
-                            <a href="#" class="pull-right text-link">view all articles</a>
+                            <div class="clearfix">
+                                <a href="#" class="pull-right text-link">view all articles</a>
+                            </div>
                         </div>
                     </div>
 
@@ -199,10 +215,10 @@
                             <header>
                                 <h5>Comments</h5>
                             </header>
-                            <div class="comment-head-dash">
-                            <div class="commenter-name-dash">Daniel Park</div>
-                            <div class="days-dash">2 days ago</div>
-                        </div>
+                            <div class="comment-head-dash clearfix">
+                                <div class="commenter-name-dash pull-left">Daniel Park</div>
+                                <div class="days-dash pull-right">2 days ago</div>
+                            </div>
                             <p class="comment-dash">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Aliquam, architecto aspernatur corporis explicabo facere
@@ -210,9 +226,9 @@
                             <small class="comment-date-dash">Today 5:10pm 24/04/2016</small>
                             <hr>
 
-                            <div class="comment-head-dash">
-                                <div class="commenter-name-dash">Daniel Park</div>
-                                <div class="days-dash">2 days ago</div>
+                            <div class="comment-head-dash clearfix">
+                                <div class="commenter-name-dash pull-left">Daniel Park</div>
+                                <div class="days-dash pull-right">2 days ago</div>
                             </div>
                             <p class="comment-dash">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -236,50 +252,50 @@
                             </header>
 
                             <table class="table table-bordered">
-                            	<thead>
-                            		<tr>
-                            			<th>#</th>
-                            			<th>Full Name</th>
-                            			<th>Email</th>
-                            			<th>Status</th>
-                            			<th>Created</th>
-                            			<th>Actions</th>
-                            		</tr>
-                            	</thead>
-                            	<tbody>
-                            		<tr>
-                            			<td>1</td>
-                            			<td>Daniel Park</td>
-                            			<td>menoelpis@gmail.com</td>
-                            			<td><a href="#" class="label label-default">pending</a></td>
-                            			<td>Today 5:50pm - 14/04/2016</td>
-                            			<td><a href="#" class="label label-danger">delete</a></td>
-                            		</tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jason Sower Lee</td>
-                                        <td>jasungkainos@safe-mail.net</td>
-                                        <td><a href="#" class="label label-success">active</a></td>
-                                        <td>Today 7:30pm - 22/03/2016</td>
-                                        <td><a href="#" class="label label-danger">delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Timothy Kim</td>
-                                        <td>kimsclass@gmail.com</td>
-                                        <td><a href="#" class="label label-success">active</a></td>
-                                        <td>Today 3:20pm - 30/04/2016</td>
-                                        <td><a href="#" class="label label-danger">delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Eunice Lee</td>
-                                        <td>eunice@gmail.com</td>
-                                        <td><a href="#" class="label label-success">active</a></td>
-                                        <td>Today 2:40pm - 22/04/2016</td>
-                                        <td><a href="#" class="label label-danger">delete</a></td>
-                                    </tr>
-                            	</tbody>
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Full Name</th>
+                                    <th class="hidden-xs">Email</th>
+                                    <th>Status</th>
+                                    <th class="hidden-xs">Created</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Daniel Park</td>
+                                    <td class="hidden-xs">menoelpis@gmail.com</td>
+                                    <td><a href="#" class="label label-default">pending</a></td>
+                                    <td class="hidden-xs">Today 5:50pm - 14/04/2016</td>
+                                    <td><a href="#" class="label label-danger">delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jason Sower Lee</td>
+                                    <td class="hidden-xs">jasungkainos@safe-mail.net</td>
+                                    <td><a href="#" class="label label-success">active</a></td>
+                                    <td class="hidden-xs">Today 7:30pm - 22/03/2016</td>
+                                    <td><a href="#" class="label label-danger">delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Timothy Kim</td>
+                                    <td class="hidden-xs">kimsclass@gmail.com</td>
+                                    <td><a href="#" class="label label-success">active</a></td>
+                                    <td class="hidden-xs">Today 3:20pm - 30/04/2016</td>
+                                    <td><a href="#" class="label label-danger">delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Eunice Lee</td>
+                                    <td class="hidden-xs">eunice@gmail.com</td>
+                                    <td><a href="#" class="label label-success">active</a></td>
+                                    <td class="hidden-xs">Today 2:40pm - 22/04/2016</td>
+                                    <td><a href="#" class="label label-danger">delete</a></td>
+                                </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
